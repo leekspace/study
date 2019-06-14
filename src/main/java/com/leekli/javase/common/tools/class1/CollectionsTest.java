@@ -1,4 +1,4 @@
-package com.leekli.java.jdk.utils;
+package com.leekli.javase.common.tools.class1;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -15,7 +15,6 @@ import java.util.Set;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.leekli.java.jdk.utils.Example.Bean;
 
 
 public class CollectionsTest {
@@ -54,6 +53,7 @@ public class CollectionsTest {
 			List<Bean> list = Lists.newArrayList();
 			Bean[] array = new Bean[]{new Bean("a"),new Bean("b"),new Bean("c")};
 			Collections.addAll(list, array);
+ 
 			int index = Collections.binarySearch(list, new Bean("b"));//¶þ·Ö²éÕÒ
 			System.out.println(index);
 			
@@ -168,5 +168,23 @@ public class CollectionsTest {
 			List<String> syncList = Collections.synchronizedList(list);
 		}
 		
+	}
+	
+	public static class Bean implements Comparable<Bean>{
+		String name;
+		public Bean(String string) {
+			this.name = string;
+		}
+		public Bean() {
+			
+		}
+		public void setName(String string) {
+			this.name = string;
+			
+		}
+		@Override
+		public int compareTo(Bean o) {
+			return name.compareTo(o.name);
+		}
 	}
 }

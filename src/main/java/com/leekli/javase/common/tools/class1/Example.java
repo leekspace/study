@@ -1,4 +1,4 @@
-package com.leekli.java.jdk.utils;
+package com.leekli.javase.common.tools.class1;
 
 import java.text.MessageFormat;
 import java.time.Instant;

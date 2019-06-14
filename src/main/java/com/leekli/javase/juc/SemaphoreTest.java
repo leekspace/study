@@ -1,4 +1,4 @@
-package com.leekli.java.jdk.juc;
+package com.leekli.javase.juc;
 
 import java.util.concurrent.Semaphore;
 
