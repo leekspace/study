@@ -16,7 +16,7 @@ public class SemaphoreTest extends Thread{
 			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + " Ω¯»Î");
 			sleep(3000);
 		} catch (Exception e) {
-			
+			e.printStackTrace();
 		}finally{
 			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + "  Õ∑≈");
 			sh.release();
@@ -24,7 +24,7 @@ public class SemaphoreTest extends Thread{
 	}
 
 	public static void main(String[] args) {
-		Semaphore sh = new Semaphore(3);	
+		Semaphore sh = new Semaphore(4);	
 		
 		SemaphoreTest st1 = new SemaphoreTest(sh);
 		SemaphoreTest st2 = new SemaphoreTest(sh);
