@@ -1,4 +1,4 @@
-package com.leekli.javase.juc;
+package com.leekli.javase.JUC;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;

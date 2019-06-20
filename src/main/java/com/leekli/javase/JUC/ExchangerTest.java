@@ -1,4 +1,4 @@
-package com.leekli.javase.juc;
+package com.leekli.javase.JUC;
 
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.TimeUnit;

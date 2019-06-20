@@ -186,5 +186,10 @@ public class CollectionsTest {
 		public int compareTo(Bean o) {
 			return name.compareTo(o.name);
 		}
+		@Override
+		public String toString() {
+			return "Bean [name=" + name + "]";
+		}
+		
 	}
 }
