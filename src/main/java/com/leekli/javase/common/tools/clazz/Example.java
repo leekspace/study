@@ -1,4 +1,4 @@
-package com.leekli.javase.common.tools.class1;
+package com.leekli.javase.common.tools.clazz;
 
 import java.text.MessageFormat;
 import java.time.Instant;

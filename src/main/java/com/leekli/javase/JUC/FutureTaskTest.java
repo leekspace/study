@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
-import com.leekli.javase.common.tools.class1.CollectionsTest.Bean;
+import com.leekli.javase.common.tools.clazz.CollectionsTest.Bean;
 
 public class FutureTaskTest  implements Callable<Bean>{
 

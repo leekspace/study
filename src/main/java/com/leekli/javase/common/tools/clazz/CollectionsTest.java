@@ -1,4 +1,4 @@
-package com.leekli.javase.common.tools.class1;
+package com.leekli.javase.common.tools.clazz;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
