@@ -1,17 +1,17 @@
-Guava¹¤³Ì°üº¬ÁËÈô¸É±»GoogleµÄ JavaÏîÄ¿¹ã·ºÒÀÀµ µÄºËĞÄ¿â
+Guavaå·¥ç¨‹åŒ…å«äº†è‹¥å¹²è¢«Googleçš„ Javaé¡¹ç›®å¹¿æ³›ä¾èµ– çš„æ ¸å¿ƒåº“
 
 
-¼¯ºÏ [collections]
+é›†åˆ [collections]
 
-»º´æ [caching]
+ç¼“å­˜ [caching]
 
-Ô­ÉúÀàĞÍÖ§³Ö [primitives support]
+åŸç”Ÿç±»å‹æ”¯æŒ [primitives support]
 
-²¢·¢¿â [concurrency libraries] 
+å¹¶å‘åº“ [concurrency libraries] 
 
-Í¨ÓÃ×¢½â [common annotations] 
+é€šç”¨æ³¨è§£ [common annotations] 
 
-×Ö·û´®´¦Àí [string processing] 
+å­—ç¬¦ä¸²å¤„ç† [string processing] 
 
 I/O
 

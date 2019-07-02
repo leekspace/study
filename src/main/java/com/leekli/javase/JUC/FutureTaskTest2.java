@@ -4,8 +4,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.FutureTask;
 
 /**
- * ½áºÏConcurrentHashMap£º£ºputIfAbsent  ±£Ö¤Ö»ÔËĞĞÒ»´Î
- * ²»Ê¹ÓÃsynchronized µÍĞÔÄÜ·ÃÎÊ
+ * ç»“åˆConcurrentHashMapï¼šï¼šputIfAbsent  ä¿è¯åªè¿è¡Œä¸€æ¬¡
+ * ä¸ä½¿ç”¨synchronized ä½æ€§èƒ½è®¿é—®
  * @author media-liwei
  *
  */
@@ -20,11 +20,11 @@ public class FutureTaskTest2  {
 		}else{
 			FutureTask<Connection> ft = new FutureTask<>(() ->createConnection());
 			FutureTask<Connection> obj = connectionPool.putIfAbsent(key, ft);
-			if( null == obj){//put³É¹¦,ĞèÒªµ÷ÓÃrunÍê³ÉÒ»´ÎÔËĞĞ
+			if( null == obj){//putæˆåŠŸ,éœ€è¦è°ƒç”¨runå®Œæˆä¸€æ¬¡è¿è¡Œ
 				obj = connectionPool.get(key);
 				obj.run();
 			}
-			//ÒÑ¾­·ÅÈëµÄÇé¿ö ÏÂ£¬Ö±½Óget·µ»Ø
+			//å·²ç»æ”¾å…¥çš„æƒ…å†µ ä¸‹ï¼Œç›´æ¥getè¿”å›
 			return obj.get();
 			
 		}

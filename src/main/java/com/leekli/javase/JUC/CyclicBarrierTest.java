@@ -8,21 +8,21 @@ public class CyclicBarrierTest {
 
 	public static void main(String[] args) {
 
-		//»áµÈ3¸öÏß³Ìµ½´ïawait£¬È»ºóÒ»ÆğÖ´ĞĞ
+		//ä¼šç­‰3ä¸ªçº¿ç¨‹åˆ°è¾¾awaitï¼Œç„¶åä¸€èµ·æ‰§è¡Œ
 	    CyclicBarrier cyclicBarrier = new CyclicBarrier(3,new TourGuideTask());
 
         Executor executor = Executors.newFixedThreadPool(3);
-        //µÇ¸ç×î´óÅÆ£¬µ½µÄ×îÍí
-        executor.execute(new TravelTask(cyclicBarrier,"¹şµÇ",5));
-        executor.execute(new TravelTask(cyclicBarrier,"±£ÂŞ",3));
-        executor.execute(new TravelTask(cyclicBarrier,"¸êµÇ",1));
+        //ç™»å“¥æœ€å¤§ç‰Œï¼Œåˆ°çš„æœ€æ™š
+        executor.execute(new TravelTask(cyclicBarrier,"å“ˆç™»",5));
+        executor.execute(new TravelTask(cyclicBarrier,"ä¿ç½—",3));
+        executor.execute(new TravelTask(cyclicBarrier,"æˆˆç™»",1));
         
 	}
 
 	public static class TravelTask implements Runnable {
 		private CyclicBarrier cyclicBarrier;
 		private String name;
-		private int arriveTime;// ¸Ïµ½µÄÊ±¼ä
+		private int arriveTime;// èµ¶åˆ°çš„æ—¶é—´
 
 		public TravelTask(CyclicBarrier cyclicBarrier, String name, int arriveTime) {
 			this.cyclicBarrier = cyclicBarrier;
@@ -33,12 +33,12 @@ public class CyclicBarrierTest {
 		@Override
 		public void run() {
 			 try {
-		            //Ä£Äâ´ïµ½ĞèÒª»¨µÄÊ±¼ä
+		            //æ¨¡æ‹Ÿè¾¾åˆ°éœ€è¦èŠ±çš„æ—¶é—´
 		            Thread.sleep(arriveTime * 1000);
-		            System.out.println(name +"µ½´ï¼¯ºÏµã");
+		            System.out.println(name +"åˆ°è¾¾é›†åˆç‚¹");
 		            cyclicBarrier.await();
-		            //Í¬Ê±Ö´ĞĞµÄÂß¼­
-		            System.out.println(name +"¿ªÊ¼ÂÃĞĞÀ²¡«¡«");
+		            //åŒæ—¶æ‰§è¡Œçš„é€»è¾‘
+		            System.out.println(name +"å¼€å§‹æ—…è¡Œå•¦ï½ï½");
 		        } catch (Exception e) {
 		            e.printStackTrace();
 		        }
@@ -50,9 +50,9 @@ public class CyclicBarrierTest {
 
 	    @Override
 	    public void run() {
-	        System.out.println("****µ¼ÓÎ·Ö·¢»¤ÕÕÇ©Ö¤****");
+	        System.out.println("****å¯¼æ¸¸åˆ†å‘æŠ¤ç…§ç­¾è¯****");
 	        try {
-	            //Ä£Äâ·¢»¤ÕÕÇ©Ö¤ĞèÒª2Ãë
+	            //æ¨¡æ‹Ÿå‘æŠ¤ç…§ç­¾è¯éœ€è¦2ç§’
 	            Thread.sleep(2000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();

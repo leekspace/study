@@ -3,7 +3,7 @@ package com.leekli.javase.JUC;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.TimeUnit;
 /**
- * 线程运行时，数据交换 
+ * 绾跨▼杩愯鏃讹紝鏁版嵁浜ゆ崲 
  * @author media-liwei
  *
  */

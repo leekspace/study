@@ -4,10 +4,10 @@ import java.util.Optional;
 
 /**
  * 
- * GuavaÓÃOptional<T>±íÊ¾¿ÉÄÜÎªnullµÄTÀàĞÍÒıÓÃ
+ * Guavaç”¨Optional<T>è¡¨ç¤ºå¯èƒ½ä¸ºnullçš„Tç±»å‹å¼•ç”¨
  * @author media-liwei
  *
- * Èç¹ûÖµ¿ÉÄÜÎªNULL£¬ÔòÊ¹ÓÃOptionalÀàÀ´°ü×°¡£
+ * å¦‚æœå€¼å¯èƒ½ä¸ºNULLï¼Œåˆ™ä½¿ç”¨Optionalç±»æ¥åŒ…è£…ã€‚
  */
 public class NullNonUse {
 	
@@ -17,8 +17,8 @@ public class NullNonUse {
 		Integer i = possible.get(); // returns 5
 		
 		
-		Optional.ofNullable(null);		//ÔÊĞíÎªnull
-		//Optional.of(null);				//NullPointerException ¿ìËÙÒì³£
+		Optional.ofNullable(null);		//å…è®¸ä¸ºnull
+		//Optional.of(null);				//NullPointerException å¿«é€Ÿå¼‚å¸¸
 		Optional<Integer> o = Optional.empty();
 		System.out.println(o.orElse(21));
 	}

@@ -37,7 +37,7 @@ public class CountDownLatchTest extends Thread{
 		c4.start();
 		c5.start();
 		try {
-			cdl.await();//µÈ´ı5¸öÏß³Ì¶¼countDown ºó£¬²Å¼ÌĞøÖ´ĞĞ
+			cdl.await();//ç­‰å¾…5ä¸ªçº¿ç¨‹éƒ½countDown åï¼Œæ‰ç»§ç»­æ‰§è¡Œ
 			System.out.println("end");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

@@ -33,8 +33,8 @@ public class VolatileTest implements Runnable{
 		} catch ( Exception e) {
 			e.printStackTrace();	
 		}
-		flag++;//ÕâÖÖ»ùÓÚ×ÔÉíÖµµÄ×ÔÔöµÄÓÃ·¨ÊÇ´íÎóµÄ¡£ÓĞ¿ÉÄÜ2¸öÏß³ÌÍ¬Ê±ÄÃµ½ÏàÍ¬µÄÖµ×ÔÔö
-		atominFlag.getAndIncrement();//Ê¹ÓÃÕı³££¬Ô­×ÓĞÔ
+		flag++;//è¿™ç§åŸºäºè‡ªèº«å€¼çš„è‡ªå¢çš„ç”¨æ³•æ˜¯é”™è¯¯çš„ã€‚æœ‰å¯èƒ½2ä¸ªçº¿ç¨‹åŒæ—¶æ‹¿åˆ°ç›¸åŒçš„å€¼è‡ªå¢
+		atominFlag.getAndIncrement();//ä½¿ç”¨æ­£å¸¸ï¼ŒåŸå­æ€§
 		System.out.println(this.getClass().getName() + index + ":" + flag + " " + atominFlag.get());
 	}
 	

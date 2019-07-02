@@ -13,12 +13,12 @@ public class SemaphoreTest extends Thread{
 	public void run() {
 		try {
 			sh.acquire();
-			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + " ½øÈë");
+			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + " è¿›å…¥");
 			sleep(3000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
-			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + " ÊÍ·Å");
+			System.out.println(sh.availablePermits() + " " + this.getClass().getName() + " é‡Šæ”¾");
 			sh.release();
 		}
 	}

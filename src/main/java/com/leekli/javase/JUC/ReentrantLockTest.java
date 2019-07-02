@@ -3,7 +3,7 @@ package com.leekli.javase.JUC;
 import java.util.concurrent.locks.Lock;
 
 /**
- * ¿ÉÖØÈëËø
+ * å¯é‡å…¥é”
  * @author media-liwei
  *
  */
