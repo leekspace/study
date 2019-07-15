@@ -1,6 +1,7 @@
 package com.leekli.javase.JUC;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ReentrantReadWriteLockTest extends Thread{
@@ -19,7 +20,7 @@ public class ReentrantReadWriteLockTest extends Thread{
 	@Override
 	public void run() {
 		try {
-			lock.readLock().lock();//¿É²¢·¢
+			lock.readLock().lock();//å¯å¹¶å‘
 			System.out.println(this.getClass().getName() + i+" : " + n++);
 		} catch (Exception e) {
 
